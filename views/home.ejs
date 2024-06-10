@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/horizontal_navbar.css">
+    <link rel="stylesheet" href="styles/sliding_cards.css">
+    <link rel="stylesheet" href="styles/homepage_content_cards.css">
+    <link rel="stylesheet" href="styles/searchbar.css">
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="http://localhost:3000/home">Home</a></li>
+        <li><a href="http://localhost:3000/movies">Movies</a></li>
+        <li><a href="http://localhost:3000/tvshows">TV Shows</a></li>
+        <li><a href="news">News</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="search anything">
+        <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zm-5.241 1.347a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+            </svg>
+        </button>
+    </div>
+
+
+    <div class="card-container">
+        <div class="card"><img src="images/Hi_Nanna.jpg" alt="Card 1"></div>
+        <div class="card"><img src="images/naruto.jpg" alt="Card 2"></div>
+        <div class="card"><img src="images/bjp.jpg" alt="Card 3"></div>
+        <div class="card"><img src="images/avengers.jpg" alt="Card 4"></div>
+        <div class="card"><img src="images/cricket.jpg" alt="Card 5"></div>
+        <div class="card"><img src="images/loki.jpg" alt="Card 6"></div>
+    </div>
+    <br>
+    <br>
+    <div class="dots">
+        <span class="dot" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+        <span class="dot" data-index="5"></span>
+    </div>
+<br>
+    <div class="main-container">
+        <div class="top-movies">
+            <div class="heading">
+                <h1>Blockbuster Movies</h1>
+                <button class="btn" onclick='window.location.href="http://localhost:3000/movies"'>See All</button>
+            </div>
+            </div>
+            <div class="movies_card">
+                <a href="https://www.imdb.com/title/tt2631186/" target="_blank">
+                    <div class="bahubali">
+                        <img src="images/bahubali.jpeg">
+                        <h3>Bahubali 2</h3>
+                    </div>
+                </a>
+                <a href="https://www.imdb.com/title/tt8178634/?ref_=fn_al_tt_1" target="_blank">
+                    <div class="rrr">
+                        <img src="images/rrr.jpg">
+                        <h3>RRR</h3>
+                    </div>
+                </a>
+                <a href="https://www.imdb.com/title/tt13927994/?ref_=fn_al_tt_1" target="_blank">
+                    <div class="salaar">
+                        <img src="images/salaar.jpg">
+                        <h3>Salaar</h3>
+                    </div>
+                </a>
+                <a href="https://www.imdb.com/title/tt9389998/?ref_=fn_al_tt_2" target="_blank">
+                    <div class="pushpa">
+                        <img src="images/pushpa.jpg">
+                        <h3>pushpa</h3>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="ala_vaikuntapuramlo">
+                        <img src="images/ala_vaikuntapuramlo.jpg">
+                        <h3>Alavaikuntapuramlo</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="top-shows">
+            <div class="heading">
+                <h1>Famous TV Shows</h1>
+                <button class="btn" onclick='window.location.href="http://localhost:3000/tvshows"'>See All</button>
+            </div>
+            <div class="shows_card">
+                <a href="https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1" target="_blank">
+                    <div class="money_heist">
+                        <img src="images/money_hiest.jpg">
+                        <h3>Money Hiest</h3>
+                    </div>
+                </a>
+                <a href="https://www.imdb.com/title/tt0944947/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_game%2520of%2520thrones" target="_blank">
+                    <div class="got">
+                        <img src="images/got.jpg">
+                        <h3>Game Of Thrones</h3>
+                    </div>
+                </a>
+                <a href="https://www.imdb.com/title/tt9140554/?ref_=tt_mv_close" target="_blank">
+                    <div class="loki">
+                        <img src="images/loki2.jpg">
+                        <h3>Loki</h3>
+                    </div>
+                </a>
+                <a href="https://www.imdb.com/title/tt12392504/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_scam%2520199" target="_blank">
+                    <div class="scam">
+                        <img src="images/scam.jpg">
+                        <h3>Scam 1992</h3>
+                    </div>
+                </a>
+                <a href="https://www.imdb.com/title/tt11198330/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_house%2520of%2520dragons" target="_blank">
+                    <div class="hod">
+                        <img src="images/hod.jpeg">
+                        <h3>House Of Dragons</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="heading">
+                <h1>Latest News</h1>
+                <button class="btn" onclick='window.location.href="http://localhost:3000/news"'>See All</button>
+            </div>
+            <div class="news_card">
+                <a href="https://www.ndtv.com/india-news/cabinet-portfolio-announcement-live-updates-modi-3-0-with-72-ministers-take-oath-portfolio-announcement-shortly-narendra-modi-pm-modi-cabinet-5859175" target="_blank">
+                    <div class="n1">
+                        <img src="images/n1.jpeg">
+                        <h3>Cabinet Porfolio Announcement</h3>
+                    </div>
+                </a>
+                <a href="https://indianexpress.com/article/sports/cricket/india-vs-pakistan-t20-world-cup-2024-thriller-9382118/" target="_blank">
+                    <div class="cricket">
+                        <img src="images/cricket.jpg">
+                        <h3>IND vs PAK, T20 World Cup</h3>
+                    </div>
+                </a>
+                <a href="https://www.thehindu.com/news/national/andhra-pradesh/illegal-bangladeshi-national-staying-in-andhra-pradesh-traced-after-ten-years-by-kin/article68273217.ece" target="_blank">
+                    <div class="n2">
+                        <img src="images/n2.jpeg">
+                        <h3>Illegal Bangladeshi national staying in Andhra Pradesh traced after ten years by kin</h3>
+                    </div>
+                </a>
+                <a href="Illegal Bangladeshi national staying in Andhra Pradesh traced after ten years by kin" target="_blank">
+                    <div class="scam">
+                        <img src="images/n3.jpg">
+                        <h3>Y.S. Sharmila condemns ‘targeting’ of her father’s statues in Andhra Pradesh</h3>
+                    </div>
+                </a>
+                <a href="https://www.thehindu.com/news/national/telangana/kishan-reddy-and-bandi-sanjay-to-represent-telangana-in-modis-30-cabinet/article68269289.ece" target="_blank">
+                    <div class="hod">
+                        <img src="images/n5.jpg">
+                        <h3>Kishan Reddy and Bandi Sanjay to represent Telangana in Union Cabinet</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="scripts/home_page.js"></script>
+</body>
+</html>
